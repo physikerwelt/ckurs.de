@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"><!-- InstanceBegin template="../Templates/navigation.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- InstanceBeginEditable name="doctitle" --><title>CKurs: einfache Fragen</title><!-- InstanceEndEditable -->
+		<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+	    <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+
+	</head>
+	<body> <center> <div id="Layer2"><div id="CkursHeader"> <h1> CKurs - Aufgaben zu C </h1></div>
+	<div id="CKursSearch">
+	<!-- SiteSearch Google --><!-- SiteSearch Google -->
+<form method="get" action="http://www.ckurs.de/suchergebnisse.html" target="_top">
+<table border="0">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+<a href="http://www.google.com/">
+<img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="middle"></img></a>
+<br/>
+<input type="hidden" name="domains" value="www.ckurs.de"></input>
+<label for="sbi" style="display: none">Geben Sie Ihre Suchbegriffe ein</label>
+<input type="text" name="q" size="31" maxlength="255" value="" id="sbi"></input>
+<label for="sbb" style="display: none">Suchformular senden</label>
+<input type="submit" name="sa" value="Suchen" id="sbb"></input>
+</td></tr>
+<tr>
+<td nowrap="nowrap">
+<table>
+<tr>
+<td>
+<input type="radio" name="sitesearch" value="" checked id="ss0"></input>
+<label for="ss0" title="Web-Suche"><font size="-1" color="#000000">Web</font></label></td>
+<td>
+<input type="radio" name="sitesearch" value="www.ckurs.de" id="ss1"></input>
+<label for="ss1" title="Suchen www.ckurs.de"><font size="-1" color="#000000">www.ckurs.de</font></label></td>
+</tr>
+</table>
+<input type="hidden" name="client" value="pub-2804672934282785"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="ie" value="UTF-8"></input>
+<input type="hidden" name="oe" value="UTF-8"></input>
+<input type="hidden" name="flav" value="0000"></input>
+<input type="hidden" name="sig" value="rWi2uceVD70agyuX"></input>
+<input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFCC;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:11"></input>
+<input type="hidden" name="hl" value="de"></input>
+</td></tr></table>
+</form>
+<!-- SiteSearch Google -->
+</div></div><div id="Layer4"> <div id="Layer1">
+    <p><a href='../index.htm' title='Hauptseite' >Hauptseite</a></p>
+    <p>&Uuml;bungen</p>
+    <blockquote>
+    <p><a href='1.html' title='&Uuml;bung 1' >1</a></p>
+    <p><a href='2.html' title='&Uuml;bung 2' >2</a></p>
+    <p><a href='3.html' title='&Uuml;bung 3' >3</a></p>
+    <p><a href='4.html' title='&Uuml;bung 4' >4</a></p>
+    <p><a href='5.html' title='&Uuml;bung 5' >5</a></p>
+    <p><a href='6.html' title='&Uuml;bung 6' >6</a></p>
+    <p><a href='7.html' title='&Uuml;bung 7' >7</a></p>
+    <p><a href='8.html' title='&Uuml;bung 8' >8</a></p>
+    <p><a href='9.html' title='&Uuml;bung 9' >9</a></p>
+    </blockquote>
+    <p><a href='../impressum.html' title='Impressum' >Impressum</a></p>
+    <p><a href="http://users.skynet.be/mgueury/mozilla/"> <img src="http://users.skynet.be/mgueury/mozilla/tidy_16.gif"
+  alt="Validated by HTML Validator (based on Tidy) " height="16" width="39"/> </a></p>
+    <p><a href="/Partner.html">Partner</a></p>
+	</div><div id="Layer3"> <!-- InstanceBeginEditable name="EditRegion3" -->
+	<div class="fold_Aufgabe">
+		<p>1.Aufgabe</p>
+		<div class="fold_Aufgabenstellung">
+			<p>Aufgabenstellung:</p>
+			<p> Welche Ausgabe liefert das folgende Programm:<br />
+			</p>
+			<div class="fold_CCode">
+				<p>CCode:</p>
+				#include  &lt;stdio.h&gt;
+				<p>int<br />
+				  main()<br />
+				  {<br />
+				  &nbsp;&nbsp;&nbsp;  printf(&quot;\nDas Ergebnis von\n12 durch 4 ist %d\n.&quot;, 3); <br />
+				  &nbsp;&nbsp;&nbsp; return 0;<br />
+				  }</p>
+			</div>
+		</div>
+		<div class="fold_Antwort">
+			<p>L&ouml;sung</p>
+			<p>Das Problem liegt darin, dass man die Standardausgabe auf dem Bildschirm nicht sieht, weil das Programm sofort nach Ausf&uuml;hrung beendet wird. Durch einen kleinen Trick kann man aber die Standardausgabe in  eine Datei umlenken. Der Befehl <span class="content_CCode">freopen( &quot;u1.1out.txt&quot;,  &quot;w&quot;, stdout );</span><br />
+			  tut dieses. Wird die Standardausgabe in die Datei u1.1out.txt im  Arbeitsverzeichnis umgelenkt, so sieht man dann das folgende Ergebnis:<br />
+			</p>
+			<div class="fold_Ausgabe">
+				<p>Ausgabe stdout:</p>
+				<p> &para;<br />
+				  Das Ergbis von <br />
+				  12 durch 4 ist 3<br />
+				  .</p>
+			</div>
+		Alternativ h&auml;tte man das Programm auch einfach &uuml;ber die Commandline /Shell ausf&uuml;hren k&ouml;nnen. </div>
+	</div>
+	<div class="fold_Aufgabe">
+	<p>2.Aufgabe</p>
+		<div class="fold_Aufgabenstellung">
+			<p>Aufgabenstellung:</p>
+			Welches Ergebnis liefert dieses Programm? <br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &Uuml;berlegen Sie  sie zun&auml;chst, welches Ergebnis Sie erwarten.<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F&uuml;hren Sie  das Programm danach aus und vergleichen Sie.
+			
+			<div class="fold_CCode">
+				<p>CCode:</p>
+				#include  &lt;stdio.h&gt;
+				
+				<p>int<br />
+				  main()<br />
+				  {<br />
+				  &nbsp;&nbsp;&nbsp; printf(&quot;4  + 7 / 2 = %d\n&quot;, 4+7/2);</p>
+				<p>&nbsp;&nbsp;&nbsp; return 0;<br />
+				  } </p>
+			</div>
+			</div>
+		<div class="fold_Antwort">
+			<p>L&ouml;sung</p>
+			<p>Erwartung: Da %d f&uuml;r vorzeichenbehaftete Integer Werte steht, ertwartet man die Ausgabe 4+7/2=7 da integer(7/2)=3. (Es wird nicht gerundet, sondern abgebrochen, nachdem der Rest kleiner 1 ist.) </p>
+			<p>Ergebnis</p>
+			<div class="fold_Ausgabe">
+				<p>Ausgabe stdout:</p>
+				<p>4 + 7 / 2 = 7</p>
+			</div>
+		</div>
+	</div>
+	<div class="fold_Aufgabe">
+		<p>3.Aufgabe</p>
+		<div class="fold_Aufgabenstellung">
+			<p>Aufgabenstellung:</p>
+			Welche der folgenden Zuweisungen sind falsch?
+			
+			<p>a) summe  = summe + 10;<br />
+			  b) x*x =  x*5;<br />
+			  c) 5a = anfang + ende;<br />
+			  d) wert = eingabe + alter_wert * 2<br />
+			  e) g_betrag = betrag * 1.14;<br />
+			  f) gesamt-wert = wert1 + wert2 + wert3 ; </p>
+		</div>
+	<div class="fold_Antwort">
+			<p>L&ouml;sung</p>
+			<p>Eingabe des Programms und Analyse der Buildfehler:</p>
+		<ol type="a"><li class="Stil1">g&uuml;ltige Zuweisung <img src="../img/CHECKMRK.gif" alt="OK" /></li><li>Zuweisung nur an Variablen und <strong>nicht</strong> an Ausdr&uuml;cke m&ouml;glich <img src="../img/fail.gif" alt="fehler" /></li><li>Variablennamen d&uuml;rfen nicht mit einer Zahl beginnen <img src="../img/fail.gif" alt="fehler" /></li><li>Fehlendes Semikolon <span class="Stil2">w&auml;re aber unter machen Kompilern am Ende einer Prozedur m&ouml;glich</span> <img src="../img/fail.gif" alt="fehler" /></li><li>g&uuml;ltige Zuweisung <span class="Stil1"><img src="../img/CHECKMRK.gif" alt="OK" /></span></li><li>Zuweisung nur an Variablen und <strong>nicht</strong> an Ausdr&uuml;cke m&ouml;glich <img src="../img/fail.gif" alt="fehler" /></li></ol>			</div>
+	</div>
+	<div class="fold_Aufgabe">
+		<p>4.Aufgabe</p>
+		<div class="fold_Aufgabenstellung">
+		<p>Aufgabenstellung:</p>
+		Warum liefert das folgende Programm unter Umst&auml;nden  ein falsches Ergebnis? <br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Korrigieren  Sie das Programm, schreiben Sie dabei die Summation mit &quot;+=&quot;.<br />
+		
+		<div class="fold_CCode">
+		<p>CCode:</p>
+		#include  &lt;stdio.h&gt;
+		
+		<p>int<br />
+		  main() {<br />
+		  &nbsp;&nbsp;&nbsp; double summe, zahl;<br />
+		  &nbsp;&nbsp;&nbsp; zahl = 10;<br />
+		  &nbsp;&nbsp;&nbsp; summe = summe +  zahl;<br />
+		  &nbsp;&nbsp;&nbsp; summe = summe +  zahl;<br />
+		  &nbsp;&nbsp;&nbsp;  printf(&quot;Ergebnis = %f\n&quot;,summe);</p>
+		<p>&nbsp;&nbsp;&nbsp; return 0;<br />
+		  } </p>
+		</div>
+		<p>&nbsp;</p></div>
+		<div class="fold_Antwort">
+		<p>L&ouml;sung</p>
+		<p>Das Programm liefert unter Umst&auml;nden  ein falsches Ergebnis, weil die Zahl 2-Mal addiert wird und so die Summe um das doppelte der Zahl w&auml;chst. Falls das beabsichtigt ist, w&auml;re die Zuweisung <span class="content_CCode">summe = summe +  2 * zahl;</span>sicherlich zu bevorzugen. Au&szlig;erdem  wird bei der ersten Addition die Variable &quot;summe&quot; verwendet, obwohl sie noch nicht initialisiert wurde (ihr kein Wert zugewiesen wurde).</p>
+		<p>Das korrigierte Programm sieht schlie&szlig;lich so aus:</p>
+		<div class="fold_CCode">
+		<p>CCode:</p>
+		#include &lt;stdio.h&gt;
+		
+		<p>int<br />
+		  main()<br />
+		  {<br />
+		  double summe, zahl;<br />
+		  freopen( &quot;stdout.txt&quot;, &quot;w&quot;, stdout ); //Leitet die Standardausgabe in die Datei stdout.txt um<br />
+		  zahl = 10;<br />
+		  summe=0;<br />
+		  summe += zahl;<br />
+		  printf(&quot;Ergebnis = %f\n&quot;,summe); <br />
+		  return 0;<br />
+		  } </p>
+		</div>
+		<p>und erzeugt folgende Ausgabe </p>
+		<div class="fold_Ausgabe">
+		<p>Ausgabe stdout:</p>
+		<p>Ergebnis = 10.000000</p>
+		</div>
+		<p>&nbsp; </p>
+		</div>
+	</div>
+	<div class="fold_Aufgabe">
+	<p>5.Aufgabe</p>
+	<div class="fold_Aufgabenstellung">
+		<p>Aufgabenstellung:</p>
+		Ein einfaches Rechenprogramm fuer zwei ganze  (Interger) Zahlen
+		
+		<div class="fold_CCode">
+		<p>CCode:</p>
+		#include  &lt;stdio.h&gt;
+		
+		<p>int<br />
+		  main() {<br />
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int x,y;<br />
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x = 12;<br />
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y = 3; <br />
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  printf(&quot;\n\t1 .&nbsp; R e c h e n  p r o g r a m m\n&quot;);<br />
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  printf(&quot;\n %d + %d ist %d&quot;,x,y,x+y);<br />
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  printf(&quot;\n %d - %d ist %d&quot;,x,y,x-y);<br />
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  printf(&quot;\n %d * %d ist %d&quot;,x,y,x*y);<br />
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  printf(&quot;\n %d / %d ist %d&quot;,x,y,x/y);<br />
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  printf(&quot;\n %d %% %d ist %d&quot;,x,y,x%y);</p>
+		<p>&nbsp;&nbsp;&nbsp; return 0;<br />
+		  } </p>
+		</div>
+		<p><br />
+		  <br />
+		  a) Bitte &Auml;ndern Sie das Programm, sodass der Benutzer die  zwei Intergerzahlen frei eingeben kann.&sup1;<br />
+		  b) Bitte machen Sie das Rechenprogramm  fliesskommazahlenf&auml;hig.</p>
+		<p>&sup1; Zu a) Die Funktion scanf() dient der Eingabe von Daten. <br />
+		  &nbsp;Zuerst kommt eine  Zeichenkette mit einem Platzhalter fuer die einzugebende Variable<br />
+		  &nbsp;(z.B. %d fuer eine  Integer-Zahl) und dahinter die Variable selbst mit vorangestelltem &amp;. <br />
+		  &nbsp;Beispiel: scanf  (&quot;%d&quot;, &amp;x)&nbsp;&nbsp; <br />
+		</p>
+		</div>
+	<div class="fold_Antwort">
+		<p>L&ouml;sung</p>
+		<p>a) man &auml;ndert das Programm wie folgt:</p>
+		<div class="fold_CCode">
+		<p>CCode:</p>
+		#include &lt;stdio.h&gt;
+		
+		<p>int<br />
+		  main()<br />
+		  {<br />
+		  int x,y;</p>
+		<p>freopen( &quot;stdout.txt&quot;, &quot;w&quot;, stdout ); //Leitet die Standardausgabe in die Datei stdout.txt um<br />
+		  freopen( &quot;stdin.txt&quot;, &quot;r&quot;, stdin ); </p>
+		<p>printf(&quot;\n\t1 .&nbsp;R e c h e n p r o g r a m m\n&quot;);<br />
+		  printf(&quot;\nBitte 2 Zahlen eingeben\n&quot;);</p>
+		<p>scanf(&quot;%d&quot;,&amp;x);<br />
+		  scanf(&quot;%d&quot;,&amp;y);</p>
+		<p>printf(&quot;\nSie haben die Zahlen %d und %d eingegeben!&quot;,x,y);</p>
+		<p>printf(&quot;\n %d + %d ist %d&quot;,x,y,x+y);<br />
+		  printf(&quot;\n %d - %d ist %d&quot;,x,y,x-y);<br />
+		  printf(&quot;\n %d * %d ist %d&quot;,x,y,x*y);<br />
+		  printf(&quot;\n %d / %d ist %d&quot;,x,y,x/y);<br />
+		  printf(&quot;\n %d %% %d ist %d&quot;,x,y,x%y);<br />
+		  return 0;<br />
+		  } </p>
+		</div>
+		<p><span class="content_CCode">freopen( &quot;stdin.txt&quot;, &quot;r&quot;, stdin );</span> dient hierbei nur dazu, dass die Standardeingabe auch aus einer Datei kommt.</p>
+		<p>F&uuml;r Integer-Zahlen klappt schon alles:</p>
+		<div class="fold_Eingabe">
+		<p>Eingabe stdin:</p>
+		<p>125<br />
+		  5 </p>
+		</div><div class="fold_Ausgabe">
+		<p>Ausgabe stdout:</p>
+		<p><br />
+		  1 .&nbsp;R e c h e n p r o g r a m m</p>
+		<p>Bitte 2 Zahlen eingeben</p>
+		<p>Sie haben die Zahlen 125 und 5 eingegeben!<br />
+		  125 + 5 ist 130<br />
+		  125 - 5 ist 120<br />
+		  125 * 5 ist 625<br />
+		  125 / 5 ist 25<br />
+		  125 % 5 ist 0</p>
+		</div>
+		<p>Allerdings ist das Ergebnis bei Eigabe von Floatwerten wie</p>
+		<div class="fold_Eingabe">
+		<p>Eingabe stdin:</p>
+		12.5<br />
+		0.5 </div>
+		<p>unsinnig.</p>
+		<div class="fold_Ausgabe">
+		<p>Ausgabe stdout:</p>
+		1 .&nbsp;R e c h e n p r o g r a m m
+		
+		<p>Bitte 2 Zahlen eingeben</p>
+		<p>Sie haben die Zahlen 12 und 4207304 eingegeben!<br />
+		  12 + 4207304 ist 4207316<br />
+		  12 - 4207304 ist -4207292<br />
+		  12 * 4207304 ist 50487648<br />
+		  12 / 4207304 ist 0<br />
+		  12 % 4207304 ist 12 </p>
+		</div>
+		<p>&Auml;ndert man allerdings die Formate f&uuml;r x und y wie folgt klappt alles. </p>
+		<div class="fold_CCode">
+		<p>CCode:</p>
+		#include &lt;stdio.h&gt;
+		
+		<p>int<br />
+		  main()<br />
+		  {<br />
+		  double x,y;<br />
+		  int ix,iy;</p>
+		<p>freopen( &quot;stdout.txt&quot;, &quot;w&quot;, stdout ); //Leitet die Standardausgabe in die Datei stdout.txt um<br />
+		  freopen( &quot;stdin.txt&quot;, &quot;r&quot;, stdin ); </p>
+		<p>printf(&quot;\n\t1 .&nbsp;R e c h e n p r o g r a m m\n&quot;);<br />
+		  printf(&quot;\nBitte 2 Zahlen eingeben\n&quot;);</p>
+		<p>scanf(&quot;%lf&quot;,&amp;x); //%f ist eine Ausnahme<br />
+		  scanf(&quot;%lf&quot;,&amp;y);</p>
+		<p>printf(&quot;\nSie haben die Zahlen %f und %f eingegeben!&quot;,x,y);</p>
+		<p>printf(&quot;\n %f + %f ist %f&quot;,x,y,x+y);<br />
+		  printf(&quot;\n %f - %f ist %f&quot;,x,y,x-y);<br />
+		  printf(&quot;\n %f * %f ist %f&quot;,x,y,x*y);<br />
+		  printf(&quot;\n %f / %f ist %f&quot;,x,y,x/y);</p>
+		<p>//Probleme gibt es mit dem % Operator</p>
+		<p>ix=x;<br />
+		  iy=y;<br />
+		  if (ix==x &amp; iy==y)<br />
+		  {<br />
+		  printf(&quot;\n %d %% %d ist %d&quot;,ix,iy,ix%iy);<br />
+		  }else{<br />
+		  printf(&quot;\nDer %% Operator ist nur im Intergerbereich definiert!&quot;,x,y);<br />
+		  }<br />
+		  return 0;<br />
+		  } </p>
+		</div>
+		<p>Zusammfassung: Man tausche <em>%d</em> gegen<em> %f </em>aus und beachte, dass beim Einlesen aus (mir unbekannten Gr&uuml;nden) %lf statt %f verwendet werden muss. Man behebe das Problem, sodass <em>%</em> nur f&uuml;r Integer definiert ist: Indem man die eigelesenen Werte in Integerwerte konvertiert und anschlie&szlig;end mit den Floatwerten vergleicht und testet. Man guckt ob  dieses die Werte &auml;ndert. Falls nicht, kann man das Ergenis f&uuml;r die Integerwerte ausgeben.</p>
+		<p>Die Eingabe </p>
+		<div class="fold_Eingabe">
+		<p>Eingabe stdin:</p>
+		12.5<br />
+		0.5 </div>
+		<p>liefert nun jedenfalls das gew&uuml;nschte Ergebnis</p>
+		<div class="fold_Ausgabe">
+		<p>Ausgabe stdout:</p>
+		<p><br />
+		  <br />
+		  1 .&nbsp;R e c h e n p r o g r a m m</p>
+		<p>Bitte 2 Zahlen eingeben</p>
+		<p>Sie haben die Zahlen 12.500000 und 0.500000 eingegeben!<br />
+		  12.500000 + 0.500000 ist 13.000000<br />
+		  12.500000 - 0.500000 ist 12.000000<br />
+		  12.500000 * 0.500000 ist 6.250000<br />
+		  12.500000 / 0.500000 ist 25.000000<br />
+		  Der % Operator ist nur im Intergerbereich definiert!</p>
+		<p>&nbsp; </p>
+	</div></div></div>
+	<p>&nbsp;</p>
+	<div class="fold_Aufgabe">
+	<p>6.Aufgabe</p>
+	<div class="fold_Aufgabenstellung">
+		<p>Aufgabenstellung:</p>
+		Schreiben Sie bitte ein C-Programm, das die Summe  der Integer-Zahlen 1-100 addiert.<br />
+		L&ouml;sen Sie das Problem mit Hilfe einer for- und einer  while-Schleife	</div>
+	<div class="fold_Antwort">
+	<p>L&ouml;sung</p>
+	<p>Das Programm </p>
+	<div class="fold_CCode">
+	<p>CCode:</p>
+	#include &lt;stdio.h&gt; <br />
+	#include &lt;time.h&gt;
+	
+	<p>int<br />
+	  main()<br />
+	  {<br />
+	  long i,e,steps;<br />
+	  <br />
+	  freopen( &quot;stdout.txt&quot;, &quot;w&quot;, stdout ); //Leitet die Standardausgabe in die Datei stdout.txt um</p>
+	<p> steps=100;<br />
+	  e=0;<br />
+	  for(i=0;i&lt;=steps;i++){<br />
+	  e+=i;<br />
+	  }</p>
+	<p>printf(  &quot;For Schleife berechnete %ld \n&quot;,e);</p>
+	<p>e=0;<br />
+	  i=0;<br />
+	  while(i&lt;steps){<br />
+	  i++;<br />
+	  e+=i;<br />
+	  }<br />
+	  <br />
+	  printf(  &quot;While Schleife berechnete %ld \n&quot;,e);</p>
+	<p>return 0;<br />
+	  } </p>
+	</div>
+	<p>tut dieses. Interessiert man sich noch f&uuml;r die Laufzeit kann man folgendes hinzuf&uuml;gen: </p>
+	<div class="fold_CCode">
+	<p>CCode:</p>
+	#include &lt;stdio.h&gt; <br />
+	#include &lt;time.h&gt;
+	
+	<p>int<br />
+	  main()<br />
+	  {<br />
+	  long i,e,steps;<br />
+	  clock_t start, finish;<br />
+	  double duration;<br />
+	  freopen( &quot;stdout.txt&quot;, &quot;w&quot;, stdout ); //Leitet die Standardausgabe in die Datei stdout.txt um<br />
+	  freopen( &quot;stdin.txt&quot;, &quot;r&quot;, stdin ); //Standardeingabe = stddin.txt </p>
+	<p>scanf(&quot;%ld&quot;,&amp;steps);<br />
+	  e=0;<br />
+	  start=clock();</p>
+	<p>for(i=0;i&lt;=steps;i++){<br />
+	  e+=i;<br />
+	  }<br />
+	  finish=clock();<br />
+	  duration = (double)(finish - start);</p>
+	<p>printf(&quot;For Schleife berechnete %ld \n  in %f ticks =%f Sekunden.\n&quot;,e,duration,duration/CLOCKS_PER_SEC);</p>
+	<p>e=0;<br />
+	  i=0;<br />
+	  start=clock();<br />
+	  while(i&lt;steps){<br />
+	  i++;<br />
+	  e+=i;<br />
+	  }<br />
+	  finish=clock();<br />
+	  duration = (double)(finish - start);<br />
+	  printf(&quot;While Schleife berechnete %ld \n  in %f ticks =%f Sekunden.\n&quot;,e,duration,duration/CLOCKS_PER_SEC);</p>
+	<p>return 0;<br />
+	  } </p>
+	</div>
+	<p>Das Programm liefert nun f&uuml;r </p>
+	<div class="fold_Eingabe">
+	<p>Eingabe stdin:</p>
+	100</div><div class="fold_Ausgabe">
+	<p>Ausgabe stdout:</p>
+	<p>For Schleife berechnete 5050 <br />
+	  in 0.000000 ticks =0.000000 Sekunden.<br />
+	  While Schleife berechnete 5050 <br />
+	  in 0.000000 ticks =0.000000 Sekunden.<br />
+	</p>
+	</div><div class="fold_Eingabe">
+	<p>Eingabe stdin:</p>
+	1000000000</div><div class="fold_Ausgabe">
+	<p>Ausgabe stdout:</p>
+	<p>For Schleife berechnete -243309312 <br />
+	  in 1140.000000 ticks =1.140000 Sekunden.<br />
+	  While Schleife berechnete -243309312 <br />
+	  in 1156.000000 ticks =1.156000 Sekunden.<br />
+	</p>
+	</div>
+	<p>Hier tritt ein overflow ein, da es keinen intrinsichen Zahlenbereich gibt, der Zahlen dieser Gr&ouml;&szlig;e verarbeiten kann. </p>
+	</div></div>
+	<p>&nbsp;</p>
+	<div class="fold_Aufgabe">
+	<p>7.Aufgabe</p>
+	<div class="fold_Aufgabenstellung">
+	<p>Aufgabenstellung:</p>
+	Schreiben Sie&nbsp;  bitte ein C-Programm, das die groessere Zahl von zwei Integer-Zahlen  bestimmt. </div><div class="fold_Antwort">
+	<p>L&ouml;sung</p>
+	<div class="fold_CCode">
+	<p>CCode:</p>
+	#include &lt;stdio.h&gt;
+	
+	<p>int<br />
+	  main()<br />
+	  {<br />
+	  int i,j;<br />
+	  freopen( &quot;stdout.txt&quot;, &quot;w&quot;, stdout ); //Leitet die Standardausgabe in die Datei stdout.txt um<br />
+	  freopen( &quot;stdin.txt&quot;, &quot;r&quot;, stdin ); //Liest die Standardeingabe aus der Datei stdin.txt um<br />
+	  scanf(&quot;%d&quot;,&amp;i);<br />
+	  scanf(&quot;%d&quot;,&amp;j);<br />
+	  if(i&gt;j){<br />
+	  printf(&quot;%d&quot;,i);<br />
+	  }else{<br />
+	  printf(&quot;%d&quot;,j);<br />
+	  }</p>
+	<p>return 0; </p>
+	</div><div class="fold_Eingabe">
+	<p>Eingabe stdin:</p>
+	48<br />
+	5 </div><div class="fold_Ausgabe">
+	<p>Ausgabe stdout:</p>
+	<p>48</p>
+	</div>
+	<p>Alternativ kurzschreibweise &uuml;ber shell:</p>
+	<div class="fold_CCode">
+    <p>CCode:</p>
+    #include &lt;stdio.h&gt;
+    
+    <p>int main(){<br />
+      int i, j;<br />
+      scanf(&quot;%d&quot;, &amp;i); scanf(&quot;%d&quot;, &amp;j);<br />
+      printf(&quot;%d\n&quot;, i&gt;j ? i : j);<br />
+return 0;} </p>
+	</div>
+	</div></div>
+	<p>&nbsp;</p>
+<!-- InstanceEndEditable --></div><script type ="text/javascript" src="../js/dynafold.js"></script>
+    <p>&nbsp;</p>
+<div id="Layer5"><script type="text/javascript"><!--
+google_ad_client = "pub-2804672934282785";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel = "";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFCC";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+google_ui_features = "rc:0";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+</div></center></body>
+<!-- InstanceEnd --></html>

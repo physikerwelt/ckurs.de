@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"><!-- InstanceBegin template="../Templates/navigation.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- InstanceBeginEditable name="doctitle" --><title>CKurs: elementare Zahlen</title><!-- InstanceEndEditable -->
+		<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+	    <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+
+	</head>
+	<body> <center> <div id="Layer2"><div id="CkursHeader"> <h1> CKurs - Aufgaben zu C </h1></div>
+	<div id="CKursSearch">
+	<!-- SiteSearch Google --><!-- SiteSearch Google -->
+<form method="get" action="http://www.ckurs.de/suchergebnisse.html" target="_top">
+<table border="0">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+<a href="http://www.google.com/">
+<img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="middle"></img></a>
+<br/>
+<input type="hidden" name="domains" value="www.ckurs.de"></input>
+<label for="sbi" style="display: none">Geben Sie Ihre Suchbegriffe ein</label>
+<input type="text" name="q" size="31" maxlength="255" value="" id="sbi"></input>
+<label for="sbb" style="display: none">Suchformular senden</label>
+<input type="submit" name="sa" value="Suchen" id="sbb"></input>
+</td></tr>
+<tr>
+<td nowrap="nowrap">
+<table>
+<tr>
+<td>
+<input type="radio" name="sitesearch" value="" checked id="ss0"></input>
+<label for="ss0" title="Web-Suche"><font size="-1" color="#000000">Web</font></label></td>
+<td>
+<input type="radio" name="sitesearch" value="www.ckurs.de" id="ss1"></input>
+<label for="ss1" title="Suchen www.ckurs.de"><font size="-1" color="#000000">www.ckurs.de</font></label></td>
+</tr>
+</table>
+<input type="hidden" name="client" value="pub-2804672934282785"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="ie" value="UTF-8"></input>
+<input type="hidden" name="oe" value="UTF-8"></input>
+<input type="hidden" name="flav" value="0000"></input>
+<input type="hidden" name="sig" value="rWi2uceVD70agyuX"></input>
+<input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFCC;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:11"></input>
+<input type="hidden" name="hl" value="de"></input>
+</td></tr></table>
+</form>
+<!-- SiteSearch Google -->
+</div></div><div id="Layer4"> <div id="Layer1">
+    <p><a href='../index.htm' title='Hauptseite' >Hauptseite</a></p>
+    <p>&Uuml;bungen</p>
+    <blockquote>
+    <p><a href='1.html' title='&Uuml;bung 1' >1</a></p>
+    <p><a href='2.html' title='&Uuml;bung 2' >2</a></p>
+    <p><a href='3.html' title='&Uuml;bung 3' >3</a></p>
+    <p><a href='4.html' title='&Uuml;bung 4' >4</a></p>
+    <p><a href='5.html' title='&Uuml;bung 5' >5</a></p>
+    <p><a href='6.html' title='&Uuml;bung 6' >6</a></p>
+    <p><a href='7.html' title='&Uuml;bung 7' >7</a></p>
+    <p><a href='8.html' title='&Uuml;bung 8' >8</a></p>
+    <p><a href='9.html' title='&Uuml;bung 9' >9</a></p>
+    </blockquote>
+    <p><a href='../impressum.html' title='Impressum' >Impressum</a></p>
+    <p><a href="http://users.skynet.be/mgueury/mozilla/"> <img src="http://users.skynet.be/mgueury/mozilla/tidy_16.gif"
+  alt="Validated by HTML Validator (based on Tidy) " height="16" width="39"/> </a></p>
+    <p><a href="/Partner.html">Partner</a></p>
+	</div><div id="Layer3"> <!-- InstanceBeginEditable name="EditRegion3" --> <div class="fold_Aufgabe">
+<p>1.Aufgabe</p>
+<div class="fold_Aufgabenstellung">
+<p>Aufgabenstellung:</p>
+Temperatur-Umrechner: Celsius nach Fahrenheit <br />
+&nbsp;&nbsp; <br />
+&nbsp;&nbsp; Schreiben Sie ein C-Programm, das eine  Celsius-Temperatur nach<br />
+&nbsp;&nbsp; Fahrenheit umrechnet. Die Umrechnung  soll mit Hilfe einer<br />
+&nbsp;&nbsp; selbst-definierten Funktion:<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div class="fold_CCode">
+<p>CCode:</p>
+double celsius2fahren(double TCelsius); </div><br />
+&nbsp;&nbsp; realisiert werden. Die  Umrechnungsformel lautet:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TFahrenheit = (( TCelsius x 9  ) / 5 ) + 32 </div><div class="fold_Antwort">
+<p>L&ouml;sung</p>
+<p>Man &quot;braucht&quot;  noch eine zus&auml;tzliche Datei: </p>
+<div class="fold_CCode">
+<p>CCode: main.h </p>
+double  celsius2fahren(double TCelsius); </div>
+<p>Nun kann man in die Hauptdatei noch eine weitere Funktion (neben main()) einf&uuml;gen: Man beachte, dass man main.h in einfachen Hochkommata &quot;includen&quot; muss, da sonst im Systemverzeichniss anstatt im Programmverzeichnis gesucht wird. </p>
+<div class="fold_CCode">
+<p>CCode: main.c </p>
+#include &lt;stdio.h&gt;<br />
+#include &quot;main.h&quot;<br />
+double  celsius2fahren(double TCelsius)<br />
+{<br />
+return (( TCelsius * 9 ) / 5 ) + 32;<br />
+}<br />
+int<br />
+main()<br />
+{<br />
+double tCel;<br />
+scanf(
+&quot;%lf &quot;,&amp;tCel);<br />
+printf(&quot;%lf \n&quot;, celsius2fahren(tCel));<br />
+return 0;
+<p>} </p>
+</div><div class="fold_Eingabe">
+<p>Eingabe stdin:</p>
+23 </div><div class="fold_Ausgabe">
+<p>Ausgabe stdout:</p>
+<p>73.400000</p>
+</div>
+<p>&nbsp; </p>
+</div></div><br />
+<div class="fold_Aufgabe">
+<p>2.Aufgabe</p>
+<div class="fold_Aufgabenstellung">
+<p>Aufgabenstellung:</p>
+Fibonacci Zahlen<br />
+<br />
+&nbsp;&nbsp; a) Schreiben Sie ein C-Programm, das  die Fibonacci-Zahlen f&uuml;r eine<br />
+&nbsp;&nbsp; positive ganze Zahl rekursiv  berechnet.<br />
+&nbsp;&nbsp; b) F&uuml;llen Sie die ersten 10 Fibonacci  Zahlen in ein Array.<br />
+&nbsp;&nbsp; c) Wie kann man dann die Array-Werte  auf dem Bildschirm ausgeben. </div><div class="fold_Antwort">
+<p>L&ouml;sung</p>
+<div class="fold_CCode">
+<p>CCode:</p>
+#include &lt;stdio.h&gt;
+
+<p>int<br />
+  main()<br />
+  {<br />
+  int i, fib[11];<br />
+  freopen( &quot;stdout.txt&quot;, &quot;w&quot;, stdout ); //Leitet die Standardausgabe in die Datei stdout.txt um<br />
+  fib[1]=1;<br />
+  fib[2]=1;<br />
+  for(i=3;i&lt;=10;i++){<br />
+  fib[i]=fib[i-1]+fib[i-2];<br />
+  }<br />
+  for(i=1;i&lt;=10;i++){<br />
+  printf(&quot;Fibnoccizahl(%2d)=%3d\n&quot;,i,fib[i]);<br />
+  }<br />
+  return 0;<br />
+  } </p>
+</div>
+<p>%nd bedeutet, dass die folgende Zahl n Zeichen auf dem Bildschirm einnimmt. </p>
+<div class="fold_Ausgabe">
+<p>Ausgabe stdout:</p>
+<p>Fibnoccizahl( 1)= &nbsp;1<br />
+  Fibnoccizahl( 2)= &nbsp;1<br />
+  Fibnoccizahl( 3)= &nbsp;2<br />
+  Fibnoccizahl( 4)= &nbsp;3<br />
+  Fibnoccizahl( 5)= &nbsp;5<br />
+  Fibnoccizahl( 6)= &nbsp;8<br />
+  Fibnoccizahl( 7)= 13<br />
+  Fibnoccizahl( 8)= 21<br />
+  Fibnoccizahl( 9)= 34<br />
+  Fibnoccizahl(10)= 55</p>
+</div>
+<p>Hinweis: fib[0] exisitiert auch im Speicher, logisch gesehen gibt es aber keine 0. Fibonaccizahl, deshalb hab ich von der Verwendung von fib[0] abgesehen. </p>
+</div></div><br />
+<div class="fold_Aufgabe">
+<p>3.Aufgabe</p>
+<div class="fold_Aufgabenstellung">
+<p>Aufgabenstellung:</p>
+Zugriff auf Dateien (geht &uuml;ber den Stoff der bisheringen Vorlesung hinaus)<br />
+&nbsp;&nbsp; <br />
+&nbsp;&nbsp; a) Schreiben Sie ein C-Programm, das  10 Zahlen aus einer Datei<br />
+&nbsp;&nbsp; &quot;celsius.dat&quot; liest und  diese von Cesius nach Fahrenheit umrechnet.<br />
+&nbsp;&nbsp; b) Erweitern Sie das C-Programm,  sodass die in a) berechneten<br />
+&nbsp;&nbsp; Fahrenheit-Temperaturen in eine neue  Datei &quot;fahrenheit.dat&quot; gespeichert werden.<br />
+<br />
+- Bitte legen Sie in Ihrem ckurs/&lt;Verzeichnis&gt; eine Datei mit dem Namen <br />
+&nbsp; &quot;celsius.dat&quot; an, die einige  Celsius-Werte enthaelt. <br />
+&nbsp; (Jeder Wert in einer eigenen Zeile )<br />
+- Das Lesen der Celsius-Werte aus der Datei &quot;celsius.dat&quot; geht dann <br />
+&nbsp; folgendermassen:<br />
+<br />
+<div class="fold_CCode">
+<p>CCode:</p>
+.	.	. while(!feof(stdin))  {&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf(&quot;%lf&quot;,  &amp;TCelsius);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } </div><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - stdin: Standardeingabe (Tastatur)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - scanf() liest normalerweise die  auf stdin eingegebenen Werte.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Man kann die Standardeingabe stdin  aber umleiten, etwa mit folgender<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Eingabe in der Kommandozeile:<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ./programmname &lt;  celsius.dat<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Damit kann man dieselbe  while-Schleife benutzen, um aus der Datei<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot;celsius.dat&quot; mit Hilfe  von scanf() die Celsius-Werte zu lesen.<br />
+<br />
+- Analog zum Lesen geht das Schreiben in eine Datei folgendermassen:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - stdout: Standardausgabe  (Bildschirm)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - printf(&quot;%lf&quot;,  TFahrenheit)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Man kann die Standardausgabe  stdout umleiten, sodass die berechneten <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fahrenheit-Werte in eine Datei  &quot;fahrehiet.dat&quot; geschrieben werden: <br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ./programmname &gt;  fahrenheit.dat </div><div class="fold_Antwort">
+<p>L&ouml;sung:</p>
+<div class="fold_CCode">
+<p>CCode: main.h </p>
+double  celsius2fahren(double TCelsius); </div><div class="fold_CCode">
+<p>CCode:</p>
+#include &lt;stdio.h&gt;<br />
+#include &quot;main.h&quot;<br />
+double  celsius2fahren(double TCelsius)<br />
+{<br />
+return (( TCelsius * 9 ) / 5 ) + 32;<br />
+}<br />
+int<br />
+main()<br />
+{<br />
+double tCel[10];<br />
+int i;<br />
+int iMax=9;<br />
+for(i=0;i&lt;=iMax;i++)<br />
+{<br />
+if (!feof(stdin)) <br />
+scanf(&quot;%lf&quot;, &amp;tCel[i]);<br />
+else<br />
+{<br />
+iMax=i;<br />
+i=10; <br />
+}<br />
+}
+
+<p> for(i=0;i&lt;=iMax;i++)<br />
+  {<br />
+  printf(&quot;%6.2f \n&quot;, celsius2fahren(tCel[i]));<br />
+  }<br />
+  return 0;</p>
+<p>} </p>
+</div>
+<p>Der Aufruf &quot;main.exe &lt; celsius.dat &gt; fahrenheit.dat&quot; mit der Datei:</p>
+<div class="fold_Eingabe">
+<p> celsius.dat:</p>
+1<br />
+2<br />
+34<br />
+32<br />
+0<br />
+4<br />
+3<br />
+3<br />
+53<br />
+3 </div>
+<p>liefert die Datei:</p>
+<div class="fold_Ausgabe">
+<p> fahrenheit.dat:</p>
+&nbsp;33.80 <br />
+&nbsp;35.60 <br />
+&nbsp;93.20 <br />
+&nbsp;89.60 <br />
+&nbsp;32.00 <br />
+&nbsp;39.20 <br />
+&nbsp;37.40 <br />
+&nbsp;37.40 <br />
+127.40 <br />
+&nbsp;37.40 </div>
+<p><br />
+</p>
+</div></div> <!-- InstanceEndEditable --></div><script type ="text/javascript" src="../js/dynafold.js"></script>
+    <p>&nbsp;</p>
+<div id="Layer5"><script type="text/javascript"><!--
+google_ad_client = "pub-2804672934282785";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel = "";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFCC";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+google_ui_features = "rc:0";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+</div></center></body>
+<!-- InstanceEnd --></html>

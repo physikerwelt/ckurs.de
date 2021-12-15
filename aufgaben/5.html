@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"><!-- InstanceBegin template="../Templates/navigation.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- InstanceBeginEditable name="doctitle" --><title>CKurs: Datentypen</title><!-- InstanceEndEditable -->
+		<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+	    <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+
+	</head>
+	<body> <center> <div id="Layer2"><div id="CkursHeader"> <h1> CKurs - Aufgaben zu C </h1></div>
+	<div id="CKursSearch">
+	<!-- SiteSearch Google --><!-- SiteSearch Google -->
+<form method="get" action="http://www.ckurs.de/suchergebnisse.html" target="_top">
+<table border="0">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+<a href="http://www.google.com/">
+<img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="middle"></img></a>
+<br/>
+<input type="hidden" name="domains" value="www.ckurs.de"></input>
+<label for="sbi" style="display: none">Geben Sie Ihre Suchbegriffe ein</label>
+<input type="text" name="q" size="31" maxlength="255" value="" id="sbi"></input>
+<label for="sbb" style="display: none">Suchformular senden</label>
+<input type="submit" name="sa" value="Suchen" id="sbb"></input>
+</td></tr>
+<tr>
+<td nowrap="nowrap">
+<table>
+<tr>
+<td>
+<input type="radio" name="sitesearch" value="" checked id="ss0"></input>
+<label for="ss0" title="Web-Suche"><font size="-1" color="#000000">Web</font></label></td>
+<td>
+<input type="radio" name="sitesearch" value="www.ckurs.de" id="ss1"></input>
+<label for="ss1" title="Suchen www.ckurs.de"><font size="-1" color="#000000">www.ckurs.de</font></label></td>
+</tr>
+</table>
+<input type="hidden" name="client" value="pub-2804672934282785"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="ie" value="UTF-8"></input>
+<input type="hidden" name="oe" value="UTF-8"></input>
+<input type="hidden" name="flav" value="0000"></input>
+<input type="hidden" name="sig" value="rWi2uceVD70agyuX"></input>
+<input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFCC;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:11"></input>
+<input type="hidden" name="hl" value="de"></input>
+</td></tr></table>
+</form>
+<!-- SiteSearch Google -->
+</div></div><div id="Layer4"> <div id="Layer1">
+    <p><a href='../index.htm' title='Hauptseite' >Hauptseite</a></p>
+    <p>&Uuml;bungen</p>
+    <blockquote>
+    <p><a href='1.html' title='&Uuml;bung 1' >1</a></p>
+    <p><a href='2.html' title='&Uuml;bung 2' >2</a></p>
+    <p><a href='3.html' title='&Uuml;bung 3' >3</a></p>
+    <p><a href='4.html' title='&Uuml;bung 4' >4</a></p>
+    <p><a href='5.html' title='&Uuml;bung 5' >5</a></p>
+    <p><a href='6.html' title='&Uuml;bung 6' >6</a></p>
+    <p><a href='7.html' title='&Uuml;bung 7' >7</a></p>
+    <p><a href='8.html' title='&Uuml;bung 8' >8</a></p>
+    <p><a href='9.html' title='&Uuml;bung 9' >9</a></p>
+    </blockquote>
+    <p><a href='../impressum.html' title='Impressum' >Impressum</a></p>
+    <p><a href="http://users.skynet.be/mgueury/mozilla/"> <img src="http://users.skynet.be/mgueury/mozilla/tidy_16.gif"
+  alt="Validated by HTML Validator (based on Tidy) " height="16" width="39"/> </a></p>
+    <p><a href="/Partner.html">Partner</a></p>
+	</div><div id="Layer3"> <!-- InstanceBeginEditable name="EditRegion3" --><div class="fold_Aufgabe">
+    <p>Strukturen &quot;struct&quot; </p>
+    <div class="fold_Aufgabenstellung">
+    <p>Aufgabenstellung:</p>
+    <p>&nbsp;&nbsp; Schreiben Sie bitte ein C-Programm zur  Berechnung der Grundoperationen (+, -, *, /)&nbsp; <br />
+  &nbsp;&nbsp; von zwei komplexen Zahlen. Dazu  definieren Sie folgende Struktur:<br />
+    </p>
+    <div class="fold_CCode">
+    <p>CCode:</p>
+    <br />
+    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;typedef struct {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;double real;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; double imag;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; } complex; </div>Es sollen f&uuml;nf Funktionen  implementiert werden:<br />
+<div class="fold_CCode">
+<p>CCode:</p>
+<p><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; complex add (complex x, complex y); //  Addition zweier komplexen Zahlen<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  complex sub (complex x, complex y); // Subtraktion zweier komplexen  Zahlen<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  complex mul (complex x, complex y); // Multiplikation zweier komplexen  Zahlen<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  complex div (complex x, complex y); // Division zweier komplexen Zahlen<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  void print(complex z);&nbsp; // Ausgabe  des Ergebnisses</p>
+</div>Das Programm soll auf drei Dateien  verteilet werden:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Eine Header-Datei  &quot;complex.h&quot; zur Deklarationen der Struktur und der Funktionen.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Eine Implementierungsdatei  &quot;complex.c&quot; und<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Eine Test-Datei  &quot;test.c&quot;.<br />
+    </div><div class="fold_Antwort">
+    <p>L&ouml;sung:</p>
+    <div class="fold_CCode">
+    <p>CCode complex.h:</p>
+    typedef struct {<br />
+double real;<br />
+double imag;<br />
+} complex;
+
+<p>complex add (complex x, complex y);<br />
+  complex sub (complex x, complex y);<br />
+  complex mul (complex x, complex y);<br />
+  complex div (complex x, complex y);<br />
+  void print(complex z); </p>
+    </div><div class="fold_CCode">
+    <p>CCode complex.c:</p>
+    #include &quot;complex.h&quot;<br />
+complex add (complex x, complex y)<br />
+// Addition zweier komplexen Zahlen<br />
+{<br />
+complex returnvalue;<br />
+returnvalue.real=x.real+y.real;<br />
+returnvalue.imag=x.imag+y.imag;<br />
+return returnvalue;<br />
+}<br />
+complex sub (complex x, complex y)<br />
+// Subtraktion zweier komplexen Zahlen<br />
+{<br />
+complex returnvalue;<br />
+returnvalue.real=x.real-y.real;<br />
+returnvalue.imag=x.imag-y.imag;<br />
+return returnvalue;<br />
+}<br />
+complex mul (complex x, complex y)<br />
+// Multiplikation zweier komplexen Zahlen<br />
+{<br />
+complex returnvalue;<br />
+returnvalue.real=x.real*y.real-x.imag*y.imag;<br />
+returnvalue.imag=x.real*y.imag-x.imag*y.real;<br />
+return returnvalue;<br />
+}<br />
+complex div (complex x, complex y)<br />
+// Division zweier komplexen Zahlen<br />
+{<br />
+complex returnvalue;<br />
+if (y.real==0 &amp;&amp; y.imag==0)<br />
+perror(&quot;Divide by Null error!&quot;);<br />
+else{<br />
+returnvalue.real=(x.real*y.real-x.imag*y.imag)/(y.imag*y.imag+x.imag*x.imag);<br />
+returnvalue.imag=(x.real*y.imag-x.imag*y.real)/(y.imag*y.imag+x.imag*x.imag);<br />
+}<br />
+return returnvalue;<br />
+}<br />
+void print(complex z)<br />
+// Ausgabe des Ergebnisses<br />
+{<br />
+printf(&quot;(%.2f%+.2fi)&quot;,z.real,z.imag);<br />
+} </div><div class="fold_CCode">
+<p>CCode:</p>
+#include &lt;stdio.h&gt;<br />
+#include &quot;complex.h&quot;<br />
+void test(complex a, complex b, char *desc, complex (*proc)(complex x, complex y))<br />
+{<br />
+complex c;<br />
+c=proc(a,b);<br />
+print(a);<br />
+printf(&quot;%s&quot;,desc);<br />
+print(b);<br />
+printf(&quot;=&quot;);<br />
+print(c);<br />
+printf(&quot;\n&quot;);<br />
+}<br />
+int main(void) {<br />
+complex a,b,cNull;<br />
+freopen( &quot;Test.txt&quot;, &quot;w&quot;, stdout ); //Leitet die Standardausgabe in die Datei Test.txt um<br />
+freopen( &quot;Fehler.txt&quot;, &quot;w&quot;, stderr ); //Leitet die Standardausgabe in die Datei Test.txt um<br />
+printf(&quot;Testbeginn:\n&quot;);<br />
+a.real=3.01;<br />
+a.imag=2.5;<br />
+b.real=7.23;<br />
+b.imag=4.56;<br />
+cNull.imag=0;<br />
+cNull.real=0;<br />
+test(a,b,&quot; + &quot;,add);<br />
+test(a,b,&quot; - &quot;,sub);<br />
+test(a,b,&quot; * &quot;,mul);<br />
+test(a,b,&quot; / &quot;,div);<br />
+test(a,cNull,&quot; / &quot;,div);<br />
+printf(&quot;Test Ende!&quot;);<br />
+} </div>
+<p>Das Testprogramm liefert folgende Ausgabe :<br />
+</p>
+
+<div class="fold_Ausgabe">
+<p>Ausgabe stdout:</p>
+<p>Testbeginn:<br />
+  (3.01+2.50i) + (7.23+4.56i)=(10.24+7.06i)<br />
+  (3.01+2.50i) - (7.23+4.56i)=(-4.22-2.06i)<br />
+  (3.01+2.50i) * (7.23+4.56i)=(10.36-4.35i)<br />
+  (3.01+2.50i) / (7.23+4.56i)=(0.38-0.16i)<br />
+  (3.01+2.50i) / (0.00+0.00i)=(0.00+0.00i)<br />
+  Test Ende! </p>
+</div>
+<p>mit den Fehlern</p>
+<div class="fold_Ausgabe">
+<p>Ausgabe stderr:</p>
+Divide by Null error!: No error </div>
+<p><br />
+</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+    </div></div>
+	<p>&nbsp;</p>
+ <!-- InstanceEndEditable --></div><script type ="text/javascript" src="../js/dynafold.js"></script>
+    <p>&nbsp;</p>
+<div id="Layer5"><script type="text/javascript"><!--
+google_ad_client = "pub-2804672934282785";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel = "";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFCC";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+google_ui_features = "rc:0";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+</div></center></body>
+<!-- InstanceEnd --></html>

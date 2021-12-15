@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"><!-- InstanceBegin template="../Templates/navigation.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- InstanceBeginEditable name="doctitle" --><title>cKurs: Pointer</title><!-- InstanceEndEditable -->
+		<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+	    <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+
+	</head>
+	<body> <center> <div id="Layer2"><div id="CkursHeader"> <h1> CKurs - Aufgaben zu C </h1></div>
+	<div id="CKursSearch">
+	<!-- SiteSearch Google --><!-- SiteSearch Google -->
+<form method="get" action="http://www.ckurs.de/suchergebnisse.html" target="_top">
+<table border="0">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+<a href="http://www.google.com/">
+<img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="middle"></img></a>
+<br/>
+<input type="hidden" name="domains" value="www.ckurs.de"></input>
+<label for="sbi" style="display: none">Geben Sie Ihre Suchbegriffe ein</label>
+<input type="text" name="q" size="31" maxlength="255" value="" id="sbi"></input>
+<label for="sbb" style="display: none">Suchformular senden</label>
+<input type="submit" name="sa" value="Suchen" id="sbb"></input>
+</td></tr>
+<tr>
+<td nowrap="nowrap">
+<table>
+<tr>
+<td>
+<input type="radio" name="sitesearch" value="" checked id="ss0"></input>
+<label for="ss0" title="Web-Suche"><font size="-1" color="#000000">Web</font></label></td>
+<td>
+<input type="radio" name="sitesearch" value="www.ckurs.de" id="ss1"></input>
+<label for="ss1" title="Suchen www.ckurs.de"><font size="-1" color="#000000">www.ckurs.de</font></label></td>
+</tr>
+</table>
+<input type="hidden" name="client" value="pub-2804672934282785"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="ie" value="UTF-8"></input>
+<input type="hidden" name="oe" value="UTF-8"></input>
+<input type="hidden" name="flav" value="0000"></input>
+<input type="hidden" name="sig" value="rWi2uceVD70agyuX"></input>
+<input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFCC;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:11"></input>
+<input type="hidden" name="hl" value="de"></input>
+</td></tr></table>
+</form>
+<!-- SiteSearch Google -->
+</div></div><div id="Layer4"> <div id="Layer1">
+    <p><a href='../index.htm' title='Hauptseite' >Hauptseite</a></p>
+    <p>&Uuml;bungen</p>
+    <blockquote>
+    <p><a href='1.html' title='&Uuml;bung 1' >1</a></p>
+    <p><a href='2.html' title='&Uuml;bung 2' >2</a></p>
+    <p><a href='3.html' title='&Uuml;bung 3' >3</a></p>
+    <p><a href='4.html' title='&Uuml;bung 4' >4</a></p>
+    <p><a href='5.html' title='&Uuml;bung 5' >5</a></p>
+    <p><a href='6.html' title='&Uuml;bung 6' >6</a></p>
+    <p><a href='7.html' title='&Uuml;bung 7' >7</a></p>
+    <p><a href='8.html' title='&Uuml;bung 8' >8</a></p>
+    <p><a href='9.html' title='&Uuml;bung 9' >9</a></p>
+    </blockquote>
+    <p><a href='../impressum.html' title='Impressum' >Impressum</a></p>
+    <p><a href="http://users.skynet.be/mgueury/mozilla/"> <img src="http://users.skynet.be/mgueury/mozilla/tidy_16.gif"
+  alt="Validated by HTML Validator (based on Tidy) " height="16" width="39"/> </a></p>
+    <p><a href="/Partner.html">Partner</a></p>
+	</div><div id="Layer3"> <!-- InstanceBeginEditable name="EditRegion3" --><div class="fold_Aufgabe">
+    <p>1.Zeiger bzw. Pointer in C</p>
+    <div class="fold_Aufgabenstellung">
+    <p>Aufgabenstellung:</p>
+    Testen und verstehen Sie folgendes  C-Programm:<br />
+    <br />
+    <div class="fold_CCode">
+    <p>CCode:</p>
+    #include &lt;stdio.h&gt;<br />
+    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int main(void)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int *p, q;<br />
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; float  *fp, **fpp, val;<br />
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char  s[] = &quot;Eine Zeichenkette!&quot;; // bzw. char *s = &quot;Eine  Zeichenkette!&quot;;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Zeiger auf Integer<br />
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; p  = &amp;q;<br />
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; q = 1;<br />
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%p  &quot;, p);<br />
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (*p)++;<br />
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%d  %p\n&quot;, q, p);<br />
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *p+=1;<br />
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%d  %p\n&quot;, q, p);<br />
+&nbsp; &nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Zeiger auf Zeiger<br />
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fp = &amp;val;<br />
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; fpp  = &amp;fp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **fpp = 203.807;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;%f %f\n&quot;,  val, **fpp);<br />
+<br />
+&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return  0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } </div></div><div class="fold_Antwort">
+<p>L&ouml;sung:</p>
+<p>Modifiziert man das Programm leicht, sodass alle aktuellen Variablen ausgegeben werden </p>
+<div class="fold_CCode">
+<p>CCode:</p>
+#include &lt;stdio.h&gt;
+
+<p>int<br />
+  main()<br />
+  {<br />
+  int *p, q;<br />
+  float  *fp, **fpp, val;<br />
+  char  s[] = &quot;Eine Zeichenkette&quot;;  // bzw. char *s = &quot;Eine  Zeichenkette!&quot;;<br />
+  freopen( &quot;stdout.txt&quot;, &quot;w&quot;, stdout ); //Leitet die Standardausgabe in die Datei stdout.txt um<br />
+  printf(&quot;--Programmbeginn--\nDefiniere p als die Adresse von q:&quot;);<br />
+  p  = &amp;q; // Zeiger auf Integer<br />
+  printf(&quot;q=%d  p=%p (q wurde aber noch nicht initialisisert!)\n&quot;, q, p);<br />
+  q = 1; printf(&quot;q=%d  p=%p (q wurde jetzt der Wert 1 zugewiesen)\n&quot;, q, p); <br />
+  (*p)++;printf(&quot;Z&auml;hle den Inhalt von p 1 hoch: q=%d  p=%p \n&quot;, q, p); <br />
+  *p+=1;printf(&quot;Weise dem Inhalt von p den um 1 erh&ouml;ten wert vom Inhalt von p zu: q=%d  p=%p \n&quot;, q, p); <br />
+  // Zeiger auf Zeiger<br />
+  fp = &amp;val; printf(&quot;Definiere fp als die Adresse von val: val=%f  fp=%p \n&quot;, val, fp);<br />
+  fpp  = &amp;fp; printf(&quot;Definiere fpp als die Adresse von fp: val=%f  fp=%p fpp=%p\n&quot;, val, fp,fpp);<br />
+  **fpp = 203.807; printf(&quot;Definiere den Inhalt vom Inhalt von fpp als 203.807: val=%f  fp=%p fpp=%p\n&quot;, val, fp,fpp);<br />
+  printf(&quot;--Ende--&quot;);<br />
+  return 0;<br />
+  } </p>
+</div>
+<p>so erh&auml;lt man: </p>
+<div class="fold_Ausgabe">
+<p>Ausgabe stdout:</p>
+<p>--Programmbeginn--<br />
+  Definiere p als die Adresse von q:q=-1670453088  p=0012FED8 (q wurde aber noch nicht initialisisert!)<br />
+  q=1  p=0012FED8 (q wurde jetzt der Wert 1 zugewiesen)<br />
+  Z&auml;hle den Inhalt von p 1 hoch: q=2  p=0012FED8 <br />
+  Weise dem Inhalt von p den um 1 erh&ouml;ten wert vom Inhalt von p zu: q=3  p=0012FED8 <br />
+  Definiere fp als die Adresse von val: val=0.000000  fp=0012FEE0 <br />
+  Definiere fpp als die Adresse von fp: val=0.000000  fp=0012FEE0 fpp=0012FEDC<br />
+  Definiere den Inhalt vom Inhalt von fpp als 203.807: val=203.807007  fp=0012FEE0 fpp=0012FEDC<br />
+  --Ende--</p>
+</div>
+<p>&nbsp; </p>
+</div></div>
+	<p><br />
+        <br />
+    </p>
+	<div class="fold_Aufgabe">
+    <p>2.Aufgabe Pointer als Funktionesparameter</p>
+    <div class="fold_Aufgabenstellung">
+    <p>Aufgabenstellung:</p>
+    <p> &nbsp;&nbsp; Schreiben Sie eine Funktion, die zwei  Werte bekommt und sie vertauscht. </p>
+    </div><div class="fold_Antwort">
+    <p>L&ouml;sung:</p>
+    <p>Der Code </p>
+    <div class="fold_CCode">
+    <p>CCode:</p>
+    #include &lt;stdio.h&gt;
+    
+    <p>void swap(int* x,int* y)<br />
+      {<br />
+      int tmp;<br />
+      tmp=*y;<br />
+      *y=*x;<br />
+      *x=tmp;<br />
+      }<br />
+      main()<br />
+      {<br />
+      int x=2, y=3;<br />
+      freopen( &quot;stdout.txt&quot;, &quot;w&quot;, stdout ); //Leitet die Standardausgabe in die Datei stdout.txt um<br />
+      printf(&quot;x=%d,y=%d\n&quot;,x,y);<br />
+      swap(&amp;x,&amp;y);<br />
+      printf(&quot;x=%d,y=%d&quot;,x,y);<br />
+      return 0;<br />
+      } </p>
+    </div>
+    <p>liefert die Ausgabe:</p>
+    <div class="fold_Ausgabe">
+    <p>Ausgabe stdout:</p>
+    <p>x=2,y=3<br />
+      x=3,y=2</p>
+    </div>
+    <p>Hinweis: Aus mir unerkl&auml;rlichen Gr&uuml;nden funktioniert swap(x,y) mit void swap(int&amp; x, int&amp; y) nicht. </p>
+    </div></div>
+	<p><br />
+        <br />
+    </p>
+	<div class="fold_Aufgabe">
+    <p>3.Aufgabe Genauigkeit von Flie&szlig;kommazahlen</p>
+    <div class="fold_Aufgabenstellung">
+    <p>Aufgabenstellung:</p>
+    Was erwartet man als Ergebnis beider  Code Beispiele?<br />
+&nbsp;&nbsp; a)<br />
+<div class="fold_CCode">
+<p>CCode:</p>
+#include&lt;stdio.h&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int main(){<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  float p1 = 3.141592653589793,&nbsp;&nbsp; p2  = 3.141592;&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  printf(&quot;%.17f\n&quot;, p1-p2);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  return 0;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } </div><br />
+<br />
+&nbsp;&nbsp; b)<br />
+&nbsp;<div class="fold_CCode">
+<p>CCode:</p>
+#include&lt;stdio.h&gt;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int main(){<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  float i=0.0;<br />
+&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;for (i=0.0; i != 1.0; i += 0.1)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; {&nbsp;&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;printf(&quot;%f&quot;,i);<br />
+&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  retrun 0;<br />
+} </div></div><div class="fold_Antwort">
+<p>L&ouml;sung</p>
+<p>zu a) man erwartet <span class="fold_CCode">0.000000653589793</span>, erh&auml;lt aber </p>
+<div class="fold_Ausgabe">
+<p>Ausgabe stdout:</p>
+<p>0.00000065358979295</p>
+</div>
+<p>zu b) Man erwartet, dass die Zahlen von 0.1 bis 1 ausgegeben werden. Tats&auml;chlich erh&auml;lt man aber eine Endlosschleife, weil 1 nie genau erreicht wird. Daher sollte man besser &lt;=1 verwenden. Vielleicht w&uuml;rde es sich hier anbieten eine neue Funktion f&uuml;r die Gleichheit bzw. Ungleichheit von floatwerten zu schreiben. </p>
+</div></div> <!-- InstanceEndEditable --></div><script type ="text/javascript" src="../js/dynafold.js"></script>
+    <p>&nbsp;</p>
+<div id="Layer5"><script type="text/javascript"><!--
+google_ad_client = "pub-2804672934282785";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel = "";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFCC";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+google_ui_features = "rc:0";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+</div></center></body>
+<!-- InstanceEnd --></html>

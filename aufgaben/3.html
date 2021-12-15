@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de"><!-- InstanceBegin template="../Templates/navigation.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- InstanceBeginEditable name="doctitle" --><title>CKurs: Schleifen</title><!-- InstanceEndEditable -->
+		<link href="../css/styles.css" rel="stylesheet" type="text/css" />
+	    <!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+
+	</head>
+	<body> <center> <div id="Layer2"><div id="CkursHeader"> <h1> CKurs - Aufgaben zu C </h1></div>
+	<div id="CKursSearch">
+	<!-- SiteSearch Google --><!-- SiteSearch Google -->
+<form method="get" action="http://www.ckurs.de/suchergebnisse.html" target="_top">
+<table border="0">
+<tr><td nowrap="nowrap" valign="top" align="left" height="32">
+<a href="http://www.google.com/">
+<img src="http://www.google.com/logos/Logo_25wht.gif" border="0" alt="Google" align="middle"></img></a>
+<br/>
+<input type="hidden" name="domains" value="www.ckurs.de"></input>
+<label for="sbi" style="display: none">Geben Sie Ihre Suchbegriffe ein</label>
+<input type="text" name="q" size="31" maxlength="255" value="" id="sbi"></input>
+<label for="sbb" style="display: none">Suchformular senden</label>
+<input type="submit" name="sa" value="Suchen" id="sbb"></input>
+</td></tr>
+<tr>
+<td nowrap="nowrap">
+<table>
+<tr>
+<td>
+<input type="radio" name="sitesearch" value="" checked id="ss0"></input>
+<label for="ss0" title="Web-Suche"><font size="-1" color="#000000">Web</font></label></td>
+<td>
+<input type="radio" name="sitesearch" value="www.ckurs.de" id="ss1"></input>
+<label for="ss1" title="Suchen www.ckurs.de"><font size="-1" color="#000000">www.ckurs.de</font></label></td>
+</tr>
+</table>
+<input type="hidden" name="client" value="pub-2804672934282785"></input>
+<input type="hidden" name="forid" value="1"></input>
+<input type="hidden" name="ie" value="UTF-8"></input>
+<input type="hidden" name="oe" value="UTF-8"></input>
+<input type="hidden" name="flav" value="0000"></input>
+<input type="hidden" name="sig" value="rWi2uceVD70agyuX"></input>
+<input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFCC;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:11"></input>
+<input type="hidden" name="hl" value="de"></input>
+</td></tr></table>
+</form>
+<!-- SiteSearch Google -->
+</div></div><div id="Layer4"> <div id="Layer1">
+    <p><a href='../index.htm' title='Hauptseite' >Hauptseite</a></p>
+    <p>&Uuml;bungen</p>
+    <blockquote>
+    <p><a href='1.html' title='&Uuml;bung 1' >1</a></p>
+    <p><a href='2.html' title='&Uuml;bung 2' >2</a></p>
+    <p><a href='3.html' title='&Uuml;bung 3' >3</a></p>
+    <p><a href='4.html' title='&Uuml;bung 4' >4</a></p>
+    <p><a href='5.html' title='&Uuml;bung 5' >5</a></p>
+    <p><a href='6.html' title='&Uuml;bung 6' >6</a></p>
+    <p><a href='7.html' title='&Uuml;bung 7' >7</a></p>
+    <p><a href='8.html' title='&Uuml;bung 8' >8</a></p>
+    <p><a href='9.html' title='&Uuml;bung 9' >9</a></p>
+    </blockquote>
+    <p><a href='../impressum.html' title='Impressum' >Impressum</a></p>
+    <p><a href="http://users.skynet.be/mgueury/mozilla/"> <img src="http://users.skynet.be/mgueury/mozilla/tidy_16.gif"
+  alt="Validated by HTML Validator (based on Tidy) " height="16" width="39"/> </a></p>
+    <p><a href="/Partner.html">Partner</a></p>
+	</div><div id="Layer3"> <!-- InstanceBeginEditable name="EditRegion3" -->
+	<p>&nbsp; </p>
+	<div class="fold_Aufgabe">
+    <p>1.Aufgabe</p>
+    <div class="fold_Aufgabenstellung">
+    <p>Aufgabenstellung:</p>
+    while und do-Schleifen<br />
+    <br />
+a) Testen Sie folgendes C-Programm:<br />
+<br />
+<div class="fold_CCode">
+<p>CCode:</p>
+#include &lt;stdio.h&gt;<br />
+int main()<br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int zahl;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;\nBitte Zahl  eingeben('0' fuer Ende): &quot;);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scanf(&quot;%d&quot;, &amp;zahl);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while(zahl != 0) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; printf(&quot;%3d hoch 2 = %4d\n&quot;, zahl,  zahl*zahl);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; printf(&quot;\nBitte Zahl eingeben('0' fuer  Ende): &quot;);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; scanf(&quot;%d&quot;, &amp;zahl);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+} </div><br />
+<br />
+b) Ersetzen Sie die while- mit einer do-while-Schleife. Was ist der<br />
+Unterschied zwischen beiden Schleifen?&nbsp; </div><div class="fold_Antwort">
+<p>L&ouml;sung</p>
+<p>Die Eingabe von </p>
+<div class="fold_Eingabe">
+<p>Eingabe stdin:</p>
+1<br />
+2<br />
+34<br />
+32<br />
+4<br />
+3<br />
+3<br />
+53<br />
+3<br />
+235<br />
+699<br />
+1568<br />
+0 </div>
+<p>liefert</p>
+<div class="fold_Ausgabe">
+<p>Ausgabe stdout:</p>
+<p><br />
+  Bitte Zahl  eingeben('0' fuer Ende):   1 hoch 2 =    1</p>
+<p>Bitte Zahl eingeben('0' fuer  Ende):   2 hoch 2 =    4</p>
+<p>Bitte Zahl eingeben('0' fuer  Ende):  34 hoch 2 = 1156</p>
+<p>Bitte Zahl eingeben('0' fuer  Ende):  32 hoch 2 = 1024</p>
+<p>Bitte Zahl eingeben('0' fuer  Ende):   4 hoch 2 =   16</p>
+<p>Bitte Zahl eingeben('0' fuer  Ende):   3 hoch 2 =    9</p>
+<p>Bitte Zahl eingeben('0' fuer  Ende):   3 hoch 2 =    9</p>
+<p>Bitte Zahl eingeben('0' fuer  Ende):  53 hoch 2 = 2809</p>
+<p>Bitte Zahl eingeben('0' fuer  Ende):   3 hoch 2 =    9</p>
+<p>Bitte Zahl eingeben('0' fuer  Ende): 235 hoch 2 = 55225</p>
+<p>Bitte Zahl eingeben('0' fuer  Ende): 699 hoch 2 = 488601</p>
+<p>Bitte Zahl eingeben('0' fuer  Ende): 1568 hoch 2 = 2458624</p>
+<p>Bitte Zahl eingeben('0' fuer  Ende): </p>
+</div>
+<p>Mit do-while erh&auml;lt man dasselbe Ergebnis, jedoch darf die Eingabe eine 0 sein, ohne dass das Programm abbricht. Das steht im Widerspruch zum Eingabetext und ist somit ein Fehler. </p>
+</div></div>
+	<p><br />
+        <br />
+    </p>
+	<div class="fold_Aufgabe">
+    <p>2.Aufgabe Geschachtelte Schleifen</p>
+    <div class="fold_Aufgabenstellung">
+    <p>Aufgabenstellung:</p>
+    Wie sieht die Ausgabe des folgenden C-Programms aus? Wie kann man die<br />
+Ausgabe auf den Kopf stellen?<br />
+<div class="fold_CCode">
+<p>CCode:</p>
+#include &lt;stdio.h&gt;<br />
+<br />
+int main() <br />
+{<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int zeile,spalte;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(zeile=1; zeile &lt;= 20;  zeile=zeile+1) {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(spalte=1; spalte &lt;=  zeile; spalte=spalte+1)<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;*&quot;);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;\n&quot;);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br />
+} </div>
+<p>&nbsp; </p>
+    </div><div class="fold_Antwort">
+    <p>L&ouml;sung:</p>
+    <p>Das Programm liefert folgende Ausgabe:</p>
+    <div class="fold_Ausgabe">
+    <p>Ausgabe stdout:</p>
+    <p>*<br />
+      **<br />
+      ***<br />
+      ****<br />
+      *****<br />
+      ******<br />
+      *******<br />
+      ********<br />
+      *********<br />
+      **********<br />
+      ***********<br />
+      ************<br />
+      *************<br />
+      **************<br />
+      ***************<br />
+      ****************<br />
+      *****************<br />
+      ******************<br />
+      *******************<br />
+      ********************</p>
+    </div>
+    <p>Die folgenden &Auml;nderungen </p>
+    <div class="fold_CCode">
+    <p>CCode:</p>
+    #include &lt;stdio.h&gt;
+    
+    <p>int<br />
+      main()<br />
+      {<br />
+      int zeile,spalte;<br />
+      freopen( &quot;stdout.txt&quot;, &quot;w&quot;, stdout ); //Leitet die Standardausgabe in die Datei stdout.txt um<br />
+      for(zeile=20; zeile;  zeile--) {<br />
+      for(spalte=1; spalte &lt;=  zeile; spalte=spalte+1)<br />
+      printf(&quot;*&quot;);<br />
+      printf(&quot;\n&quot;);<br />
+      }<br />
+      return 0;<br />
+      } </p>
+    </div>
+    <p>liefern das gew&uuml;nschte Ergebnis.</p>
+    <div class="fold_Ausgabe">
+    <p>Ausgabe stdout:</p>
+    ********************<br />
+*******************<br />
+******************<br />
+*****************<br />
+****************<br />
+***************<br />
+**************<br />
+*************<br />
+************<br />
+***********<br />
+**********<br />
+*********<br />
+********<br />
+*******<br />
+******<br />
+*****<br />
+****<br />
+***<br />
+**<br />
+* </div>
+    <p>&nbsp;</p>
+    <p>Da Zeile als Boolean ausgewertet wird, ist Zeile=FALSE f&uuml;r alle Werte ungleich 0. <br />
+    </p>
+    </div></div>
+	<p><br />
+        <br />
+    </p>
+	<div class="fold_Aufgabe">
+    <p>3.Aufgabe Einsmaleins mit Hilfe geschachtelter Schleifen</p>
+    <div class="fold_Aufgabenstellung">
+    <p>Aufgabenstellung:</p>
+    a) Schreiben Sie ein C-Programm, das das kleine Einsmaleins in tabellarischer<br />
+&nbsp;&nbsp; Form erzeugt: <br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;1&nbsp;&nbsp;  2&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp; .&nbsp;&nbsp;  .&nbsp;&nbsp; 10<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;2&nbsp;&nbsp;  4&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp; .&nbsp;&nbsp;  .&nbsp;&nbsp; 20<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;  .&nbsp;&nbsp;&nbsp;&nbsp; .&nbsp; &nbsp;.&nbsp;&nbsp; .&nbsp;&nbsp;&nbsp;&nbsp;  . <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; .&nbsp;&nbsp;&nbsp;  .&nbsp;&nbsp;&nbsp;&nbsp; .&nbsp;&nbsp; .&nbsp;&nbsp;  .&nbsp;&nbsp;&nbsp;&nbsp; .&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;10&nbsp;  20&nbsp; .&nbsp;  .&nbsp;&nbsp; .&nbsp;&nbsp; 100<br />
+<br />
+b) Wie kann man das Ergebnis in ein zwei-dimensionales Feld&nbsp; speichern und anzeigen? </div><div class="fold_Antwort">
+<p>L&ouml;sung:</p>
+<p>Das Programm</p>
+<div class="fold_CCode">
+<p>CCode:</p>
+#include &lt;stdio.h&gt;
+
+<p>int<br />
+  main()<br />
+  {<br />
+  int i,j,mal[11][11];<br />
+  freopen( &quot;stdout.txt&quot;, &quot;w&quot;, stdout ); //Leitet die Standardausgabe in die Datei stdout.txt um<br />
+  for (i=1; i&lt;=10;i++){<br />
+  printf(&quot;|&quot;);<br />
+  for(j=1;j&lt;=10;j++){<br />
+  mal[i][j]=i*j;<br />
+  printf(&quot;%3d|&quot;,mal[i][j]);<br />
+  }<br />
+  printf(&quot;\n&quot;);<br />
+  }<br />
+  return 0;<br />
+  } </p>
+</div>
+<p>liefert.</p>
+<p>&nbsp; </p>
+<div class="fold_Ausgabe">
+<p>Ausgabe stdout:</p>
+<p>&nbsp;&nbsp;|&nbsp;&nbsp;1|&nbsp;&nbsp;2|&nbsp;&nbsp;3|&nbsp;&nbsp;4|&nbsp;&nbsp;5|&nbsp;&nbsp;6|&nbsp;&nbsp;7|&nbsp;&nbsp;8|&nbsp;&nbsp;9|&nbsp;10|<br />
+  &nbsp;&nbsp;|&nbsp;&nbsp;2|&nbsp;&nbsp;4|&nbsp;&nbsp;6|&nbsp;&nbsp;8|&nbsp;10|&nbsp;12|&nbsp;14|&nbsp;16|&nbsp;18|&nbsp;20|<br />
+  &nbsp;&nbsp;|&nbsp;&nbsp;3|&nbsp;&nbsp;6|&nbsp;&nbsp;9|&nbsp;12|&nbsp;15|&nbsp;18|&nbsp;21|&nbsp;24|&nbsp;27|&nbsp;30|<br />
+  &nbsp;&nbsp;|&nbsp;&nbsp;4|&nbsp;&nbsp;8|&nbsp;12|&nbsp;16|&nbsp;20|&nbsp;24|&nbsp;28|&nbsp;32|&nbsp;36|&nbsp;40|<br />
+  &nbsp;&nbsp;|&nbsp;&nbsp;5|&nbsp;10|&nbsp;15|&nbsp;20|&nbsp;25|&nbsp;30|&nbsp;35|&nbsp;40|&nbsp;45|&nbsp;50|<br />
+  &nbsp;&nbsp;|&nbsp;&nbsp;6|&nbsp;12|&nbsp;18|&nbsp;24|&nbsp;30|&nbsp;36|&nbsp;42|&nbsp;48|&nbsp;54|&nbsp;60|<br />
+  &nbsp;&nbsp;|&nbsp;&nbsp;7|&nbsp;14|&nbsp;21|&nbsp;28|&nbsp;35|&nbsp;42|&nbsp;49|&nbsp;56|&nbsp;63|&nbsp;70|<br />
+  &nbsp;&nbsp;|&nbsp;&nbsp;8|&nbsp;16|&nbsp;24|&nbsp;32|&nbsp;40|&nbsp;48|&nbsp;56|&nbsp;64|&nbsp;72|&nbsp;80|<br />
+  &nbsp;&nbsp;|&nbsp;&nbsp;9|&nbsp;18|&nbsp;27|&nbsp;36|&nbsp;45|&nbsp;54|&nbsp;63|&nbsp;72|&nbsp;81|&nbsp;90|<br />
+  &nbsp;&nbsp;|&nbsp;10|&nbsp;20|&nbsp;30|&nbsp;40|&nbsp;50|&nbsp;60|&nbsp;70|&nbsp;80|&nbsp;90|100|<br />
+</p>
+</div>
+<p>wobei &quot;mal&quot; das gew&uuml;nschte Feld ist. </p>
+</div></div>
+	<p><br />
+        <br />
+    </p>
+	<div class="fold_Aufgabe">
+    <p>4. Bedingte Anweisungen und ASCII-Zeichensatz</p>
+    <div class="fold_Aufgabenstellung">
+    <p>Aufgabenstellung:</p>
+    <p> Was tut das folgende Programm? Erg&auml;nzen Sie bitte beide printf-Anweisungen in  sinnvoller Weise. </p>
+    
+    <div class="fold_CCode">
+    <p>CCode:</p>
+    #include &lt;stdio.h&gt;<br />
+    <br />
+int main() {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; char bstb;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;\nBitte keine Umlaute  eingeben !\n&quot;);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;\nBuchstabe :  &quot;);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bstb=getchar(); /* Was macht diese  Funktion? */<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(bstb &lt; 'A' || bstb &gt; 'z' ||  bstb &gt; 'Z' &amp;&amp; bstb &lt; 'a')&nbsp;&nbsp; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;\nDas ist kein  Buchstabe !&quot;);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else if(bstb &gt;= 'A' &amp;&amp; bstb &lt;= 'Z')<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;\nSie  haben ... eingeben.\n&quot;);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; printf(&quot;\nSie haben ...  eingeben.\n&quot;);<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return 0;<br />
+<br />
+} </div><div class="fold_Antwort">
+<p>L&ouml;sung:</p>
+<p>Die Funktion <em>getchar</em> liest stdin Zeichen f&uuml;r Zeichen als <em>Integerwert</em> ein, aber erst nachdem <em>ENTER</em> (\n) gedr&uuml;ckt wurde.</p>
+<p>Die <em>printf</em> Anweisungen <strong>k&ouml;nnten</strong> so erg&auml;nzt werden:</p>
+<div class="fold_CCode">
+<p>CCode:</p>
+else if(bstb &gt;= 'A' &amp;&amp; bstb &lt;= 'Z')<br />
+printf(&quot;\nSie haben den grossen Buchstaben %c eingeben.\n&quot;,bstb);<br />
+else<br />
+printf(&quot;\nSie haben den kleinen Buchstaben %c eingeben.\n&quot;,bstb);} </div>
+<p>Leider klappt das nicht so einfach unter Windows. (Der kopierte C-Code liefert sage und schreibe 32 Exceptions.) </p>
+</div></div></div><div class="fold_Aufgabe">
+<p>5.Aufgabe</p>
+<div class="fold_Aufgabenstellung">
+<p>Aufgabenstellung:</p>
+<br />
+<br />
+Was erzeugen folgende Anweisungen:<br />
+&nbsp;&nbsp; a) for(;;) { /* Anweisungen */}<br />
+&nbsp;&nbsp; b) while(1) { /* Anweisnugen */}<br />
+&nbsp;&nbsp; </div><div class="fold_Antwort">
+<p>L&ouml;sung:</p>
+<p>Endlosschleifen. </p>
+</div></div>
+<p><br />
+  &nbsp;<br />
+
+	</p><!-- InstanceEndEditable --></div><script type ="text/javascript" src="../js/dynafold.js"></script>
+    <p>&nbsp;</p>
+<div id="Layer5"><script type="text/javascript"><!--
+google_ad_client = "pub-2804672934282785";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_type = "text_image";
+google_ad_channel = "";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFCC";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+google_ui_features = "rc:0";
+//-->
+</script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+</div></center></body>
+<!-- InstanceEnd --></html>

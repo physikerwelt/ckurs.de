@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>MathML-Testpage</title>
+
+</head>
+ 
+<body id="index" class="home">
+  <p>The series
+
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display='inline'>
+  <munderover>
+    <mo>&sum;</mo>
+    <mrow>
+      <mi>n</mi>
+      <mo>=</mo>
+      <mn>1</mn>
+    </mrow>
+    <mi>&infin;</mi>
+  </munderover>
+  <mfrac>
+    <mn>1</mn>
+    <mi>n</mi>
+  </mfrac>
+</math>
+is divergent.</p>
+
+<p> Same code with display='inline'->display='block' 
+
+
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display='block'>
+  <munderover>
+    <mo>&sum;</mo>
+    <mrow>
+      <mi>n</mi>
+      <mo>=</mo>
+      <mn>1</mn>
+    </mrow>
+    <mi>&infin;</mi>
+  </munderover>
+  <mfrac>
+    <mn>1</mn>
+    <mi>n</mi>
+  </mfrac>
+</math>
+</p>
+
+<p> LaTeXML sample: \sum_{n=1}^\infty\frac1n
+
+ <math xref="p1.1.m1.1.cmml" display="inline" xml:id="p1.1.m1.1" alttext="\sum_{n=1}^{\infty}\frac{1}{n}" class="ltx_Math" id="p1.1.m1" xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantics xref="p1.1.m1.1.cmml" xml:id="p1.1.m1.1a">
+    <mrow xref="p1.1.m1.1.5.cmml" xml:id="p1.1.m1.1.5">
+      <msubsup xref="p1.1.m1.1.5.1.cmml" xml:id="p1.1.m1.1.5.1">
+        <mo xref="p1.1.m1.1.1.cmml" xml:id="p1.1.m1.1.1">&sum;</mo>
+        <mrow xref="p1.1.m1.1.2.1.cmml" xml:id="p1.1.m1.1.2.1">
+          <mi xref="p1.1.m1.1.2.1.1.cmml" xml:id="p1.1.m1.1.2.1.1">n</mi>
+          <mo xref="p1.1.m1.1.2.1.2.cmml" xml:id="p1.1.m1.1.2.1.2">=</mo>
+          <mn xref="p1.1.m1.1.2.1.3.cmml" xml:id="p1.1.m1.1.2.1.3">1</mn>
+        </mrow>
+
+        <mi xref="p1.1.m1.1.3.1.cmml" xml:id="p1.1.m1.1.3.1" mathvariant="normal">&infin;</mi>
+
+      </msubsup>
+      <mfrac xref="p1.1.m1.1.4.cmml" xml:id="p1.1.m1.1.4">
+        <mn xref="p1.1.m1.1.4.2.cmml" xml:id="p1.1.m1.1.4.2">1</mn>
+        <mi xref="p1.1.m1.1.4.3.cmml" xml:id="p1.1.m1.1.4.3">n</mi>
+      </mfrac>
+    </mrow>
+    <annotation-xml xref="p1.1.m1.1" encoding="MathML-Content" xml:id="p1.1.m1.1.cmml">
+      <apply xref="p1.1.m1.1.5" xml:id="p1.1.m1.1.5.cmml">
+        <apply xref="p1.1.m1.1.5.1" xml:id="p1.1.m1.1.5.1.cmml">
+          <csymbol xml:id="p1.1.m1.1.5.1.1.cmml" cd="ambiguous">superscript</csymbol>
+          <apply xml:id="p1.1.m1.1.5.1.2.cmml">
+            <csymbol xml:id="p1.1.m1.1.5.1.2.1.cmml" cd="ambiguous">subscript</csymbol>
+            <sum xref="p1.1.m1.1.1" xml:id="p1.1.m1.1.1.cmml"/>
+            <apply xref="p1.1.m1.1.2.1" xml:id="p1.1.m1.1.2.1.cmml">
+              <eq xref="p1.1.m1.1.2.1.2" xml:id="p1.1.m1.1.2.1.2.cmml"/>
+              <ci xref="p1.1.m1.1.2.1.1" xml:id="p1.1.m1.1.2.1.1.cmml">n</ci>
+              <cn xref="p1.1.m1.1.2.1.3" xml:id="p1.1.m1.1.2.1.3.cmml" type="integer">1</cn>
+            </apply>
+          </apply>
+          <infinity xref="p1.1.m1.1.3.1" xml:id="p1.1.m1.1.3.1.cmml"/>
+        </apply>
+        <apply xref="p1.1.m1.1.4" xml:id="p1.1.m1.1.4.cmml">
+          <divide xml:id="p1.1.m1.1.4.1.cmml"/>
+          <cn xref="p1.1.m1.1.4.2" xml:id="p1.1.m1.1.4.2.cmml" type="integer">1</cn>
+          <ci xref="p1.1.m1.1.4.3" xml:id="p1.1.m1.1.4.3.cmml">n</ci>
+        </apply>
+      </apply>
+    </annotation-xml>
+    <annotation xref="p1.1.m1.1.cmml" encoding="application/x-tex" xml:id="p1.1.m1.1b">\sum_{n=1}^{\infty}\frac{1}{n}</annotation>
+  </semantics>
+</math>
+and so on </p>
+<p> now chaning display='inline'->display='block':
+  </p>
+   <math xref="p1.1.m1.1.cmml" display="block" xml:id="p1.1.m1.1" alttext="\sum_{n=1}^{\infty}\frac{1}{n}" class="ltx_Math" id="p1.1.m1" xmlns="http://www.w3.org/1998/Math/MathML">
+  <semantics xref="p1.1.m1.1.cmml" xml:id="p1.1.m1.1a">
+    <mrow xref="p1.1.m1.1.5.cmml" xml:id="p1.1.m1.1.5">
+      <msubsup xref="p1.1.m1.1.5.1.cmml" xml:id="p1.1.m1.1.5.1">
+        <mo xref="p1.1.m1.1.1.cmml" xml:id="p1.1.m1.1.1">&sum;</mo>
+        <mrow xref="p1.1.m1.1.2.1.cmml" xml:id="p1.1.m1.1.2.1">
+          <mi xref="p1.1.m1.1.2.1.1.cmml" xml:id="p1.1.m1.1.2.1.1">n</mi>
+          <mo xref="p1.1.m1.1.2.1.2.cmml" xml:id="p1.1.m1.1.2.1.2">=</mo>
+          <mn xref="p1.1.m1.1.2.1.3.cmml" xml:id="p1.1.m1.1.2.1.3">1</mn>
+        </mrow>
+
+        <mi xref="p1.1.m1.1.3.1.cmml" xml:id="p1.1.m1.1.3.1" mathvariant="normal">&infin;</mi>
+
+      </msubsup>
+      <mfrac xref="p1.1.m1.1.4.cmml" xml:id="p1.1.m1.1.4">
+        <mn xref="p1.1.m1.1.4.2.cmml" xml:id="p1.1.m1.1.4.2">1</mn>
+        <mi xref="p1.1.m1.1.4.3.cmml" xml:id="p1.1.m1.1.4.3">n</mi>
+      </mfrac>
+    </mrow>
+    <annotation-xml xref="p1.1.m1.1" encoding="MathML-Content" xml:id="p1.1.m1.1.cmml">
+      <apply xref="p1.1.m1.1.5" xml:id="p1.1.m1.1.5.cmml">
+        <apply xref="p1.1.m1.1.5.1" xml:id="p1.1.m1.1.5.1.cmml">
+          <csymbol xml:id="p1.1.m1.1.5.1.1.cmml" cd="ambiguous">superscript</csymbol>
+          <apply xml:id="p1.1.m1.1.5.1.2.cmml">
+            <csymbol xml:id="p1.1.m1.1.5.1.2.1.cmml" cd="ambiguous">subscript</csymbol>
+            <sum xref="p1.1.m1.1.1" xml:id="p1.1.m1.1.1.cmml"/>
+            <apply xref="p1.1.m1.1.2.1" xml:id="p1.1.m1.1.2.1.cmml">
+              <eq xref="p1.1.m1.1.2.1.2" xml:id="p1.1.m1.1.2.1.2.cmml"/>
+              <ci xref="p1.1.m1.1.2.1.1" xml:id="p1.1.m1.1.2.1.1.cmml">n</ci>
+              <cn xref="p1.1.m1.1.2.1.3" xml:id="p1.1.m1.1.2.1.3.cmml" type="integer">1</cn>
+            </apply>
+          </apply>
+          <infinity xref="p1.1.m1.1.3.1" xml:id="p1.1.m1.1.3.1.cmml"/>
+        </apply>
+        <apply xref="p1.1.m1.1.4" xml:id="p1.1.m1.1.4.cmml">
+          <divide xml:id="p1.1.m1.1.4.1.cmml"/>
+          <cn xref="p1.1.m1.1.4.2" xml:id="p1.1.m1.1.4.2.cmml" type="integer">1</cn>
+          <ci xref="p1.1.m1.1.4.3" xml:id="p1.1.m1.1.4.3.cmml">n</ci>
+        </apply>
+      </apply>
+    </annotation-xml>
+    <annotation xref="p1.1.m1.1.cmml" encoding="application/x-tex" xml:id="p1.1.m1.1b">\sum_{n=1}^{\infty}\frac{1}{n}</annotation>
+  </semantics>
+</math>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display='block'>
+  <msup>
+    <mi>e</mi>
+    <mstyle mathcolor='#0000cc' mathsize='.7em'>
+      <mn>2</mn>
+      <mi>x</mi>
+      <mo>+</mo>
+      <mn>1</mn>
+    </mstyle>
+  </msup>
+</math>
+
+<p>
+Testpage for samples from
+http://rypress.com/tutorials/mathml/advanced-formatting.html
+</p>
+</body>
+</html>
